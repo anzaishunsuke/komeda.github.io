@@ -12,15 +12,31 @@
    </figure>
 <nav>
   <ul>
-    <li><a href="info.html">持ち帰り情報</a></li>
-    <li><a href="takeout2.html">持ち帰りに関する注意点</a></li>
-    <li><a href="qr.html">QRコード</a></li>
-    <li><a href="mypage2.html">アカウント設定</a></li>
-  
+    <li><a href="point2.html">持ち帰りに関する注意点</a></li>
   </ul>
   </nav>
 </div>
-<div class="message"><img src="url(https://assets.komeda.co.jp/eos/shop/1140.jpg);
+<div class="message">
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/push.js/0.0.11/push.min.js"></script>
+  <body>
+  <h1>Push.js Sample</h1>
+  <button type="button" onclick="sendPushNotification()">クリックして下さい</button>
+  <script type="text/javascript">
+  function sendPushNotification() {
+  Push.create('食べ終わりました！', {
+  body: 'ご馳走様でした！',
+  icon: 'index.jpg',
+  timeout: 5000,
+  onClick: function () {
+  this.close();
+  location.href = 'http://localhost/k/info.html';
+  }
+  });
+  }
+  </script>
+  </body>
+
 </div>
 </body>
 </html>

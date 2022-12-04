@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>コメダ珈琲</title>
+<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+<div class="dot">
+<figure>
+    <a href="index.html"><img src="fol/logo.png">
+   </figure>
+<nav>
+  <ul>
+    <li><a href="menu.html">メニュー</a></li>
+    <li><a href="point.html">持ち帰りに関する注意点</a></li>
+  </ul>
+  </nav>
+</div>
+<div class="message">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/push.js/0.0.11/push.min.js"></script>
+    <body>
+    <h1>Push.js Sample</h1>
+    <button type="button" onclick="sendPushNotification()">クリックして下さい</button>
+    <script type="text/javascript">
+    function sendPushNotification() {
+    Push.create('食べ終わりました！', {
+    body: 'ご馳走様でした！',
+    icon: 'index.jpg',
+    timeout: 5000,
+    onClick: function () {
+    this.close();
+    location.href = 'http://localhost/k/info.html';
+    }
+    });
+    }
+    </script>
+    </body>
+
+</div>
+</body>
+</html>
