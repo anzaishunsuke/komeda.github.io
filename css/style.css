@@ -84,6 +84,15 @@ h3, h4, p{
 	margin-left: auto;
 	margin-right: auto;
 }
+
+.moji,.moji2{
+	background-color: lightblue;
+}
+
+	.back{
+		background-color: lightblue;
+	}
+
 div.card {
 	width: 400px;
 	height: 180px;;
@@ -150,11 +159,12 @@ img {
 
 .moji {
 	font-size: 25px;
+	margin-bottom:-20px;
 }
 
 .moji2 {
 	font-size: 20px;
-	color: floralwhite;
+	color: black;
 }
 
 .m {
