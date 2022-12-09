@@ -106,7 +106,6 @@ div.card2 {
 	border-radius: 20px; 
 }
 body {
-	background-color: lightblue;
 	overflow: scroll;
 	overflow-x: hidden;
 	
@@ -161,11 +160,34 @@ img {
 .m {
 	background-color: white;
     border-radius: 10px;
-    width: 500px;
+    width: 202px;
     margin: 20px;
+		padding-top: 0px;
     margin-left: auto;
     margin-right: auto;
     padding: 10px;
+}
+
+.ar {
+	background-color: white;
+    border-radius: 10px;
+    width: 270px;
+    margin: 20px;
+		padding-top: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+}
+
+.ar>li{
+	font-size: 20px;
+}
+
+.m>img{
+width: 200px;
+}
+.m>p{
+	font-size: 30px;
 }
 
 section.hero .button {
