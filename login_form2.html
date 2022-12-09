@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ログイン画面</title>
+    <title>ユーザ登録画面</title>
 </head>
 <body>
-<h2>ログインフォーム<h2>
-    <form action="login2.html" method="POST">
+<h2>ユーザ登録フォーム<h2>
+    <form action="register.html" method="POST">
         <p>
             <label for="email">メールアドレス:</label>
             <input type="email" name="email">
@@ -17,9 +17,14 @@
             <input type="password" name="password">
         </p>
         <p>
-            <input type="submit" value="ログイン">
-        </P>    
+            <label for="password_conf">パスワード確認:</label>
+            <input type="password" name="password_conf">
+        </p>
+        
+        <p>
+            <a href="register2.html"><input type="submit" value="新規登録"></a>
+        </p>    
     </form>
-    <a href="signup_form2.html">新規登録はこちら</a>
+    <a href="login_form.html">ログインする</a>
 </body>
 </html>
